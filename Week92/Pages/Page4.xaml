@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Week92.Page4"
+             Title="Page 4">
+    <VerticalStackLayout HorizontalOptions="Center">
+        <Label
+            Text="Cardholder Name"     
+            />
+        <Entry x:Name="Entry_Name"/>
+
+        <Label
+            Text="Card No"     
+            />
+        <Entry x:Name="Entry_No"/>
+
+        <HorizontalStackLayout>
+            <VerticalStackLayout HorizontalOptions="Start">
+                <Label
+                    Text="Date"     
+                    />
+                <Entry x:Name="Entry_Date"/>
+            </VerticalStackLayout>
+            <VerticalStackLayout HorizontalOptions="End">
+                <Label
+                    Text="CVV"     
+                    />
+                <Entry x:Name="Entry_CVV"/>
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+
+        <RadioButton Content="Cache" x:Name="Radio_Cache"/>
+        <RadioButton Content="Installments" x:Name="Radio_Installments"/>
+
+        <HorizontalStackLayout>
+            <Label Text="Total"/>
+            <Entry x:Name="Entry_Total"/>
+        </HorizontalStackLayout>
+
+        <Button Text="Pay" Clicked="ButtonPay_Clicked"/>
+
+
+    </VerticalStackLayout>
+</ContentPage>

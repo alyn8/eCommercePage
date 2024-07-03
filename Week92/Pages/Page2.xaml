@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="Red"
+             x:Class="Week92.Page2"
+             Title="Page 2">
+    <VerticalStackLayout HorizontalOptions="Center" BackgroundColor="Black" >
+        <VerticalStackLayout HorizontalOptions="Center" BackgroundColor="Black">
+            <!-- CPU Seçenekleri -->
+            <StackLayout>
+                <Label Text="CPU" />
+                <RadioButton Content="Core i3" x:Name="Radio_i3" />
+                <RadioButton Content="Core i5" x:Name="Radio_i5" />
+                <RadioButton Content="Core i7" x:Name="Radio_i7" />
+                <RadioButton Content="Core i9" x:Name="Radio_i9" />
+            </StackLayout>
+
+            <!-- Depolama Seçenekleri -->
+            <StackLayout>
+                <Label Text="Storage" />
+                <RadioButton Content="SSD" x:Name="Radio_SSD" />
+                <RadioButton Content="HDD" x:Name="Radio_HDD" />
+            </StackLayout>
+
+            <!-- Monitör Seçenekleri -->
+            
+        </VerticalStackLayout>
+
+
+        <StackLayout>
+            <Label Text="Monitor" />
+            <RadioButton Content="Philips" />
+            <RadioButton Content="NEC" />
+            <RadioButton Content="HP" />
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>
